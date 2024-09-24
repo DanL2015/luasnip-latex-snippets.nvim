@@ -121,7 +121,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "abs", name = "abs" }, "\\left\\lvert$1\\right\\rvert$0"),
     parse_snippet({ trig = "norm", name = "abs" }, "\\left\\lvert$1\\right\\rvert$0"),
     parse_snippet({ trig = "Norm", name = "norm" }, "\\left\\lVert$1\\right\\rVert$0"),
-    parse_snippet({ trig = "inprod", name = "inner product"}, "\\langle$0,$1\\rangle"),
+    parse_snippet({ trig = "inprod", name = "inner product"}, "\\langle$1,$2\\rangle"),
     parse_snippet({ trig = "top", name = "top"}, "\\top"),
     parse_snippet({ trig = "perp", name = "perp"}, "\\perp"),
     parse_snippet({ trig = "min", name = "min"}, "\\min"),

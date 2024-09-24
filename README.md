@@ -1,3 +1,6 @@
+## My personal forked version of luasnip latex snippets
+Small tweaks: Keybind changes, removal of unused snippets, addition of more symbols, removal of spaces after snippets.
+
 # luasnip-latex-snippets
 
 A port of [Gilles Castel's](https://github.com/gillescastel/latex-snippets)
