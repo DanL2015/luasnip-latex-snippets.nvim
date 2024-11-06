@@ -139,8 +139,8 @@ function M.retrieve(is_math)
 
     parse_snippet({ trig = ":=", name = "colon equals (lhs defined as rhs)" }, "\\coloneqq"),
 
-    parse_snippet({ trig = "or", name = "cup" }, "\\cup"),
-    parse_snippet({ trig = "and", name = "cap" }, "\\cap"),
+    parse_snippet({ trig = "cup", name = "cup" }, "\\cup"),
+    parse_snippet({ trig = "cap", name = "cap" }, "\\cap"),
 
     parse_snippet({ trig = "OO", name = "emptyset" }, "\\O"),
     parse_snippet({ trig = "RR", name = "R" }, "\\mathbb{R}"),
