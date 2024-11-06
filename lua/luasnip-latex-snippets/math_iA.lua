@@ -120,7 +120,7 @@ function M.retrieve(is_math)
 
     parse_snippet({ trig = "abs", name = "abs" }, "\\left\\lvert$1\\right\\rvert$0"),
     parse_snippet({ trig = "norm", name = "abs" }, "\\left\\lvert$1\\right\\rvert$0"),
-    parse_snippet({ trig = "Norm", name = "norm" }, "\\left\\lVert$1\\right\\rVert$0"),
+    parse_snippet({ trig = "Norm", name = "norm", priority = 100 }, "\\left\\lVert$1\\right\\rVert$0"),
     parse_snippet({ trig = "inprod", name = "inner product"}, "\\langle$1,$2\\rangle"),
     parse_snippet({ trig = "top", name = "top"}, "\\top"),
     parse_snippet({ trig = "perp", name = "perp"}, "\\perp"),
@@ -139,8 +139,8 @@ function M.retrieve(is_math)
 
     parse_snippet({ trig = ":=", name = "colon equals (lhs defined as rhs)" }, "\\coloneqq"),
 
-    parse_snippet({ trig = "cup", name = "cup" }, "\\cup"),
-    parse_snippet({ trig = "cap", name = "cap" }, "\\cap"),
+    parse_snippet({ trig = "or", name = "cup" }, "\\cup"),
+    parse_snippet({ trig = "and", name = "cap" }, "\\cap"),
 
     parse_snippet({ trig = "OO", name = "emptyset" }, "\\O"),
     parse_snippet({ trig = "RR", name = "R" }, "\\mathbb{R}"),
